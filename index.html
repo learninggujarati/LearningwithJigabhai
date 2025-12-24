@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gujarati Trader</title>
 
-<!-- ================= META PIXEL (NEW – SAME AS OLD SETUP) ================= -->
+<!-- ================= META PIXEL (NEW ONLY) ================= -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -15,11 +15,13 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
+  
 fbq('init', '1568187684503366');
 fbq('track', 'PageView');
+  
 </script>
 <noscript>
-  <img height="1" width="1" style="display:none"
+<img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1568187684503366&ev=PageView&noscript=1"
 /></noscript>
 <!-- ================= END META PIXEL ================= -->
@@ -27,151 +29,160 @@ src="https://www.facebook.com/tr?id=1568187684503366&ev=PageView&noscript=1"
 <style>
 *{box-sizing:border-box}
 body{
-margin:0;
-font-family:Segoe UI,Arial,sans-serif;
-background:linear-gradient(180deg,#050505,#0d0d0d);
-color:#f5f5f5;
-text-align:center;
-}
-.container{
-max-width:420px;
-margin:auto;
-padding:26px 16px 40px;
+ margin:0;
+ font-family:Segoe UI,Arial,sans-serif;
+ background:linear-gradient(180deg,#eef2ff,#f8fafc);
+ color:#111;
+ text-align:center;
 }
 
-/* ZOOM ANIMATION */
-@keyframes zoomPulse{
-0%{transform:scale(1)}
-30%{transform:scale(1.06)}
-60%{transform:scale(0.96)}
-100%{transform:scale(1)}
+/* MAIN CARD */
+.container{
+ max-width:420px;
+ margin:28px auto;
+ background:#ffffff;
+ border-radius:22px;
+ padding:30px 18px 40px;
+ box-shadow:0 25px 60px rgba(0,0,0,.12);
 }
 
 /* LOGO */
-.logo-wrap{margin-top:22px;display:flex;justify-content:center}
-.logo-gold{
-width:150px;height:150px;border-radius:50%;
-padding:3px;
-background:linear-gradient(135deg,#d4af37,#8f6b1f,#d4af37);
-box-shadow:0 0 18px rgba(212,175,55,.6);
-animation:zoomPulse 3.6s ease-in-out infinite;
+.logo{
+ width:140px;
+ height:140px;
+ border-radius:50%;
+ margin:10px auto 14px;
+ box-shadow:0 12px 28px rgba(0,0,0,.25);
+ overflow:hidden;
+ border:4px solid #e5e7eb;
 }
-.logo-gold img{
-width:100%;height:100%;
-border-radius:50%;
-background:#000;
+.logo img{
+ width:100%;
+ height:100%;
+ object-fit:cover;
 }
 
 /* TITLE */
 h1{
-margin:16px 0 6px;
-font-size:30px;
-font-weight:900;
-letter-spacing:1.4px;
-color:#d4af37;
+ font-size:30px;
+ font-weight:900;
+ margin:10px 0 6px;
+ letter-spacing:.6px;
 }
-.sub{font-size:14px;color:#bfae72}
+.subs{
+ font-size:14px;
+ color:#6b7280;
+ margin-bottom:18px;
+}
 
 /* INFO */
-.info-box{
-margin:20px 0;
-background:#0f0f0f;
-border-radius:16px;
-padding:15px 16px;
-text-align:left;
-border:1px solid #1f1f1f;
+.info{
+ font-size:15px;
+ line-height:1.8;
+ color:#374151;
+ margin:10px 0 26px;
 }
-.info-box li{margin:8px 0;font-size:14px}
+.info div{
+ margin:7px 0;
+}
 
-/* JOIN BUTTON */
+/* BUTTON */
 .join-btn{
-margin:22px auto 12px;
-display:block;
-width:100%;
-max-width:360px;
-padding:16px;
-font-size:18px;
-font-weight:900;
-border-radius:16px;
-color:#fff;
-text-decoration:none;
-background:linear-gradient(90deg,#ff2a2a,#2563eb);
-box-shadow:0 0 24px rgba(37,99,235,.6);
-animation:zoomPulse 2.8s ease-in-out infinite;
+ display:block;
+ width:100%;
+ max-width:360px;
+ margin:0 auto 20px;
+ padding:17px;
+ font-size:18px;
+ font-weight:900;
+ color:#fff;
+ text-decoration:none;
+ border-radius:14px;
+ background:linear-gradient(90deg,#2563eb,#4f46e5);
+ box-shadow:0 14px 32px rgba(79,70,229,.45);
+ transition:.25s ease;
+}
+.join-btn:hover{
+ transform:translateY(-2px);
+ box-shadow:0 18px 38px rgba(79,70,229,.55);
 }
 
-/* LIVE */
-.live{margin-top:10px;font-size:18px;font-weight:800;color:#f5d77a}
-.client-box{
-margin:10px auto 0;
-background:#0f0f0f;
-border-radius:16px;
-padding:14px;
-max-width:360px;
-border:1px solid #1f1f1f;
+/* TRUST */
+.stars{
+ font-size:20px;
+ color:#f59e0b;
+ margin-bottom:8px;
 }
-.profit{font-size:24px;font-weight:900;color:#3ddc84}
-.small{font-size:12px;color:#9aa0a6}
+.trust{
+ font-size:13px;
+ color:#6b7280;
+ margin-bottom:18px;
+}
 
-/* DISCLAIMER */
-.warn{
-margin-top:18px;
-font-size:11.5px;
-color:#8b8b8b;
-line-height:1.5;
+/* FOOTER */
+.footer{
+ font-size:12px;
+ color:#9ca3af;
+ line-height:1.6;
 }
 </style>
 </head>
 
 <body>
+
 <div class="container">
 
-  <div class="logo-wrap">
-    <div class="logo-gold">
-      <img src="https://uploads.onecompiler.io/445e5df86/445tc7ue3/330.png" alt="Gujarati Trader">
-    </div>
-  </div>
+<!-- LOGO -->
+<div class="logo">
+ <img src="https://uploads.onecompiler.io/445e5df86/445tc7ue3/330.png" alt="Gujarati Trader">
+</div>
 
-  <h1>GUJARATI TRADER</h1>
-  <div class="sub">Market Education • Discipline • Risk Awareness</div>
+<!-- TITLE -->
+<h1>GUJARATI TRADER</h1>
+<div class="subs">15,000+ learners • Trusted community</div>
 
-  <div class="info-box">
-    <ul>
-      <li>📊 Chart Reading & Technical Levels</li>
-      <li>📈 Nifty • BankNifty • Stocks</li>
-      <li>🛡️ Risk Management Education</li>
-    </ul>
-  </div>
+<!-- INFO -->
+<div class="info">
+ <div>📊 <b>Market Education & Chart Reading</b></div>
+ <div>📈 Nifty • BankNifty • Stock Analysis</div>
+ <div>🛡️ Risk Management & Discipline</div>
+ <div>🎯 Learn with clarity, not false promises</div>
+</div>
 
-  <a class="join-btn"
-     href="https://t.me/+Tqftpeh3WMM2NWY9"
-     target="_blank"
-     onclick="fbq('track','JoinTelegramClick');">
-     JOIN OUR TELEGRAM
-  </a>
+<!-- BUTTON -->
+<a class="join-btn" id="joinBtn"
+ href="https://t.me/+dhRBNejSfSFlY2Rl"
+ target="_blank">
+JOIN TELEGRAM CHANNEL
+</a>
 
-  <div class="live">🔴 Community Learning Update</div>
+<!-- TRUST -->
+<div class="stars">⭐⭐⭐⭐⭐</div>
+<div class="trust">Rated highly by community learners</div>
 
-  <div class="client-box">
-    <div class="profit" id="profit">+ ₹34,440</div>
-    <div class="small">Shared educational outcome</div>
-  </div>
-
-  <div class="warn">
-    ⚠️ Educational purpose only. No tips, no guarantees.<br>
-    Market participation involves risk.
-  </div>
+<!-- FOOTER -->
+<div class="footer">
+Educational purpose only. No tips, no guarantees.<br>
+Market participation involves risk.
+</div>
 
 </div>
 
 <script>
-const profits=[12400,18600,24500,29800,34440];
-setInterval(()=>{
-document.getElementById("profit").innerText =
-"+ ₹"+profits[Math.floor(Math.random()*profits.length)].toLocaleString("en-IN");
-},6000);
+/* TELEGRAM CLICK TRACKING */
+document.addEventListener("DOMContentLoaded", function () {
+  const joinBtn = document.getElementById("joinBtn");
+  if (joinBtn) {
+    joinBtn.addEventListener("click", function () {
+      if (typeof fbq === 'function') {
+        fbq('trackCustom','JoinTelegram');
+        fbq('track','Lead');
+      }
+      this.style.pointerEvents = "none";
+    });
+  }
+});
 </script>
 
 </body>
 </html>
-
